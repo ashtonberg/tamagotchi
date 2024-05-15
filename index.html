@@ -3,40 +3,47 @@
     <head>
         <meta charset = "UTF-8">
         <title>Ashton's Knockoff Tamagotchi</title>
-        <!--<link rel="stylesheet" href="boilerstyles.css">-->
         <style>
-            div {
+            p {
                 color: olive;
             }
         </style>
     </head>
     <body>
         <h1>Ashton's Knockoff Tamagotchi Project</h1>
+        <h2>Overview</h2>
+        
         <p>
-            This is just a quickly put together overview of what the final product of my project looked like. The 
+            This is just a very quickly put together overview of what the final product of my project looked like. The 
             home screen shows your pet in a jumping animation, a lightbulb on the right side of the screen, and 
             four selectable options at the top of the screen. The four options at the top are feed, toggle light, 
             stats, and game.
 
+            <br><br>
             The goal is to just not let your pet die. If its hunger of happiness reaches zero, a "Pet Died" 
             screen will show up and it's game over. If the pet's happiness or hunger is below half, an attention 
             circle will be displayed in the bottom right of the screen.
 
+            <br><br>
             While on the home screen, the green button moves the position of the cursor to the right one, with wrap-around
             to the left. Pressing the blue button will select the option currently pointed to by the cursor.
 
+            <br><br>
             Selecting the 'feed' option will make an apple pop up in front of the pet for a second. If the pet is hungry,
             a heart will pop up for a second to the right of them, and their hunger will go up a little. If they are 
             full, an 'X' will pop up instead, and their happiness will drop a little. 
 
+            <br><br>
             Selecting the 'light' option toggles the light on the right side of the screen. The pet likes having the light
             on, so if it is off for too long, they will start losing happiness. However, the pet falls asleep every 
             couple of minutes, and you need to turn the light off before they wake up or their happiness will go down.
 
+            <br><br>
             Selecting the 'stats' option opens up a stats menu that displays three separate bars for hunger, happiness,
             and level. These represent the pet's current state. You want their hunger and happiness bars to be full. 
             The level bar just shows how long they have been alive for.
 
+            <br><br>
             Selecting the 'game' option will enter you into a minigame and a song (lostwoods from Zelda) will begin 
             playing. The game plays for three rounds, and the current round is shown at the top. The goal is to guess 
             which direction the pet will turn. The green button will guesses left, and the blue button guesses right. 
@@ -45,27 +52,31 @@
             for three rounds, the pet's happiness will go up based on how many guesses you got correct, you will return 
             to the home screen, and the music will turn off.
 
+            <br><br>
             If you twist the potentiometer dial while pressing the yellow button, you can adjust the brightness of the
             display. Turning the potentiometer while not holding down the yellow button won't do anything.
 
+            <br><br>
             You can connect to the device over bluetooth. I used the LightBlue app for communicating with it. While 
             connected, if you send a hex value ending in 0xAB, it's supposed to simulate "petting" your pet, 
             and a heart will pop up in the bottom left of the screen. Sending any other value won't do anything. If 
             the pet's happiness or hunger drop below half while connected to a device, then it will send a notification
             to your device.
 
-
         </p>
 
+        <br><br>
+        <h2>Videos</h2>
         <div class="overview">
-            <img src="/siteImages/overview.HEIC" alt="Picture of Overall Project" width="500" height="600">
+            <img src="/siteImages/overview.jpeg" alt="Picture of Overall Project" width="500" height="600">
             <p>
                 This is what the project looked like. It's not that pretty looking, but I'm not actually selling it 
-                or anything. The hardware consists of the AVR-BLE, a speaker, three buttons, a potentiometer dial, 
+                or anything. The hardware consists of an AVR-BLE, a speaker, three buttons, a potentiometer dial, 
                 and a 48x64 OLED display. 
             </p>
         </div>
 
+        <br><br>
         <div class="cursor">
             <video width="320" height="240" controls>
               <source src="siteImages/cursor.mov" type="video/quicktime">
@@ -78,6 +89,7 @@
             </p>
         </div>
 
+        <br><br>
         <div class="feed">
             <video width="320" height="240" controls>
               <source src="siteImages/feed.mov" type="video/quicktime">
@@ -89,6 +101,7 @@
             </p>
         </div>
 
+        <br><br>
         <div class="light">
             <video width="320" height="240" controls>
               <source src="siteImages/light.mov" type="video/quicktime">
@@ -99,16 +112,20 @@
             </p>
         </div>
 
+        <br><br>
         <div class="game">
             <video width="320" height="240" controls>
               <source src="siteImages/game.mov" type="video/quicktime">
               Your browser does not support the video tag.
             </video>
             <p>
-                This video shows the minigame. 
+                This video shows the minigame. You can see that on the first two guesses, I guessed left and was
+                correct since the pet turned left. On the thrid guess, I guessed it would turn right but was wrong. 
+                After playing the game, the pet's happiness went up a bit.
             </p>
         </div>
 
+        <br><br>
         <div class="bb">
             <p>
                 I tried taking a video of the changing the display brightness but it didn't show up that well on
@@ -117,6 +134,7 @@
             </p>
         </div>
 
+        <br><br>
         <div class="closing">
             <p>
                 Thanks for taking a look at my project! It was fun to make, and I think it turned out pretty 
