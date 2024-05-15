@@ -2,7 +2,7 @@
 
 This is my final prject for CSCI 5143, Real-Time and Embedded Systems, Spring 2024.
 
-For my project, I created a simpler version of a Tamagotchi, which is a digital pet on a keychain. The "5143 Final Report.pdf" file is a detailed report of the project that explains how everything actually works. If you want to see some pictures and read a description of the final product, check out the "Final Product" section towards the end of this pdf. Additionally, there are some videos in the "videos" folder. The descriptions of the videos are below.
+For my project, I created a simpler version of a Tamagotchi, which is a digital pet on a keychain. The "5143 Final Report.pdf" file is a detailed report of the project that explains how everything actually works. If you want to see some pictures and read a description of the final product, check out the "Final Product" section towards the end of this pdf. Additionally, there are some videos and a picture in the "media" folder. The descriptions of the videos are below.
 
 ## Videos
 ### cursor.mov
